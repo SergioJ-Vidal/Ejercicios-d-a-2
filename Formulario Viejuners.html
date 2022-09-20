@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>El club viejuner</h1>
+
+    <form>
+
+    <fieldset>
+        <legend>Tú</legend>
+    
+    <br>
+
+    <label for="Nombre">Nombre</label>
+    <input type="text" id="Nombre" placeholder="Inserte Nombre" autofocus tabindex="-1" required>
+    
+    <br>
+    <br>
+    
+    <label for="Apellidos">Apellidos</label>
+    <input type="text" id="Apellidos" placeholder="Inserte Apellidos" tabindex="-1" required>
+    
+    <br>
+    <br>
+
+    <label for="Edad">Edad</label>
+    <input type="number" id="Edad" placeholder="Inserte edad" tabindex="-1" required> 
+
+    <br>
+    <br>
+    
+    Sexo:    
+
+    <label for="Hombre">Hombre</label>
+    <input type="radio" id="Hombre" value="Hombre" tabindex="-1"> <!--Revisar por que deja seleccionar las 2 opciones-->
+    <label for="Mujer">Mujer</label>
+    <input type="radio" id="Mujer" value="Mujer" tabindex="-1">
+
+    <br>
+    <br>
+    
+    <label for="Me siento viejuner">Me siento viejuner</label> 
+    <input type="checkbox" id="Me siento viejuner" tabindex="-1">
+
+    <br>
+    <br>
+
+    <label for="Escribe algo sobre ti">Escribe algo sobre ti:</label>
+    <textarea name="textarea" cols="40" rows="5" id="Escribe algo sobre ti" tabindex="-1"></textarea></fieldset>
+
+    <br>
+    <br>
+
+    <fieldset>
+        <legend>Conctacto</legend>
+    
+    <br>
+
+    <label for="correo">Corre electrónico:</label>
+    <input type="mail" id="correo" name="correo" placeholder="Inserte correo electrónico" tabindex="-1">
+
+    <br>
+    <br>
+
+    <label for="Numero teléfono">Número de teléfono:</label>
+    <input type="tel" id="Numero teléfono" name="telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" maxlength="9" placeholder="Inserte teléfono" tabindex="-1"></fieldset>
+    
+    <br>
+    <br>
+
+    <input type="submit" value="Enviar"><input type="reset" value="Reiniciar">
+
+    </form>
+</body>
+</html>

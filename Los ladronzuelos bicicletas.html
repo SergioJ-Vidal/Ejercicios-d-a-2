@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+
+    <h1>Los ladronzuelos de bicicletas</h1>
+
+    <fieldset>
+        <legend><b>Fecha y Hora</b></legend>
+
+      <br>
+
+      <label for="fecha">Día</label>
+      <input type="date" id="fecha" name="fecha"  autofocus required>
+
+      <br>
+      <br>
+
+      <label for="hora">Hora</label>
+      <input type="time" id="hora" name="hora" required>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><b>Características de la bicicleta</b></legend>
+
+      <br>
+
+      <label for="precio">Rango de precio</label>
+      <input type="range" min="300" max="3000" step="100"> <!--Averiguar como mostrar el número en el navegador mientras se desliza-->
+
+      <br>
+      <br>
+
+      <label for="color">Color de la bicicleta</label>
+      <input type="color" id="color" name="color">
+
+      <br>
+      <br>
+
+      <label for="tipo">Tipo de bicicleta</label>
+      <select id="tipo" name="tipo">
+        
+        <optgroup label="Paseo">
+            <option value="señorial">Señorial</option>
+            <option value="antiplebeyos">Anti-plebeyos</option>
+            <option value="encimahombro">PorEncimaDelHombro</option>
+        </optgroup>
+        <optgroup label="Montaña">
+            <option value="gamusinos">Gamusinos</option>
+            <option value="hueleflores=">Hueleflores premium</option>
+            <option value="fangolover">Fango lover</option>
+        </optgroup>
+        <optgroup label="Carretera">
+            <option value="metromedio">Metroymedio</option>
+            <option value="3tarde">3 de la tarde. Fluorescente edition</option>
+            <option value="grupitors">Grupitors</option>
+        </optgroup>
+      
+      </select>
+
+      <br>
+      <br>
+
+      <label for="marca">Marca</label> 
+      <input list="marca">
+      <datalist id="marca">
+        <option value="Specialized">
+        <option value="Trek">
+        <option value="Merida">
+        <option value="Scott">
+        <option value="Giant">
+        <option value="Cube">
+        <option value="Lapierre">
+        <option value="Orbea">
+        <option value="Cannondale">
+        <option value="Bmc">
+        <option value="Canyon">
+        <option value="Look">
+        <option value="Protek">
+        <option value="Megamo">
+        <option value="Pinarello">
+        <option value="Bianchi">
+        <option value="BH">
+        <option value="Factor">
+        <option value="Ghost">
+        <option value="Cervélo">
+        <option value="Argon">
+
+
+      </datalist>
+
+
+
+    </fieldset>
+
+    <br>
+    <br>
+
+    <fieldset>
+        <legend><b>Accesorios</b></legend>
+
+        <br>
+
+        <input type="checkbox" id="ruedines" name="ruedines" value="ruedines">
+        <label for="ruedines"> Ruedines</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Pegatinas</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Cestita</label><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Bomba de aire</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Timbre</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Foco</label>
+
+       
+
+    </fieldset>
+
+    <br>
+    <br>
+
+    <input type="submit" value="Enviar"><input type="reset" value="Reiniciar">
+
+    </form>
+</body>
+</html>
